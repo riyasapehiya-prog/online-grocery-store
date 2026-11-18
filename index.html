@@ -6,9 +6,34 @@
     <title>Online Grocery Store - FreshMart</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body><div id="login-page" class="login-page">
+    <div class="login-box">
+        <h1>Fresh<span>Mart</span></h1>
+        <p>Welcome! Login to start shopping.</p>
+
+        <input type="text" id="login-name" placeholder="Enter your name" required>
+        <input type="tel" id="login-phone" placeholder="Mobile number" required>
+        <input type="password" id="login-password" placeholder="Create password" required>
+
+        <button onclick="loginUser()">Login / Sign Up</button>
+        <p id="login-message"></p>
+    </div>
+</div>
+
 
 <header>
+    <div class="welcome-offer">
+    🎉 Welcome to FreshMart!
+    <strong>Get ₹50 OFF on Your First Order!</strong>
+</div>
+    <div class="delivery-info">
+    <p>📍 Serving Palampur</p>
+    <p>🚀 Within 5 KM: 10 Minutes</p>
+    <p>🛵 5–10 KM: 20 Minutes</p>
+    <p>📦 Beyond 10 KM: Up to 30 Minutes</p>
+    <p>🕒 Delivery Hours: 8 AM – 9 PM</p>
+    <p>🎉 Free Delivery Within 5 KM</p>
+</div>
     <div class="logo">Fresh<span>Mart</span></div>
     <nav>
         <a href="#home">Home</a>
@@ -73,6 +98,15 @@
         <input type="text" id="pincode" placeholder="6 Digit PIN Code">
 
         <input type="text" id="landmark" placeholder="Nearby Landmark">
+        <label for="customer-distance">Select Your Distance:</label>
+
+<select id="customer-distance" required>
+    <option value="">Select Distance</option>
+    <option value="5">0–5 KM (Free Delivery)</option>
+    <option value="10">5–10 KM (₹59)</option>
+    <option value="11">More than 10 KM (₹59)</option>
+</select>
+
 
         <h3>Select Payment Method</h3>
 
@@ -88,14 +122,33 @@
 
     </div>
 </section>
-
 <section class="about" id="about">
     <h2>About FreshMart</h2>
+
     <p>
-        FreshMart is an online grocery store that helps customers
-        purchase fresh fruits, vegetables and daily grocery items
-        conveniently from their homes.
+        Welcome to FreshMart, your trusted online grocery store
+        in Palampur. We make grocery shopping easy and convenient.
     </p>
+
+    <p>
+        We provide fresh fruits, vegetables, dairy products,
+        snacks, beverages and daily essentials at affordable prices.
+    </p>
+
+    <p>
+        Our mission is to provide quality products, quick delivery
+        and a better shopping experience for our customers.
+    </p>
+
+    <h3>Why Choose FreshMart?</h3>
+    <ul>
+        <li>Fresh and quality products</li>
+        <li>Affordable prices</li>
+        <li>Easy online ordering</li>
+        <li>Free delivery within 5 KM</li>
+        <li>Fast delivery service</li>
+        <li>Customer satisfaction</li>
+    </ul>
 </section>
 
 <section class="contact" id="contact">

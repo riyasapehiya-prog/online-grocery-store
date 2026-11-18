@@ -231,3 +231,149 @@ footer {
     background: #fff;
     border-radius: 8px;
 }
+/* FRESHMART LOGIN PAGE */
+
+.login-page {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: linear-gradient(135deg, #eaffea, #ffffff, #d8f5dc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-box {
+    background: white;
+    width: 100%;
+    max-width: 400px;
+    padding: 35px 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.login-box h1 {
+    font-size: 32px;
+    color: #168b35;
+    margin-bottom: 10px;
+}
+
+.login-box h1 span {
+    color: #ff8c00;
+}
+
+.login-box p {
+    color: #666;
+    margin-bottom: 22px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 14px;
+    background: #168b35;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background: #106c29;
+}
+
+#login-message {
+    margin-top: 15px;
+}
+/* Sticky FreshMart Header */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: white;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+}
+
+/* Cart Highlight */
+.cart-link {
+    background: #168b35;
+    color: white !important;
+    padding: 12px 18px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.cart-link:hover {
+    background: #106c29;
+    transform: scale(1.05);
+}
+
+#cart-count {
+    background: #ffcc00;
+    color: #222;
+    padding: 3px 8px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+#cart-toast {
+    display: none;
+    position: fixed;
+    top: 85px;
+    right: 20px;
+    background: #168b35;
+    color: white;
+    padding: 15px 22px;
+    border-radius: 10px;
+    z-index: 10000;
+    box-shadow: 0 4px 15px #999;
+    font-weight: bold;
+}
+.delivery-info {
+    background: #eaffef;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    border-bottom: 2px solid #168b35;
+}
+
+.delivery-info p {
+    background: white;
+    color: #166b2d;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    box-shadow: 0 2px 6px #ddd;
+}
+.welcome-offer {
+    background: #fff3cd;
+    color: #8a5700;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.welcome-offer strong {
+    display: block;
+    margin-top: 5px;
+    color: #168b35;
+}
